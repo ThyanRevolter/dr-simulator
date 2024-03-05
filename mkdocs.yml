@@ -50,6 +50,10 @@ plugins:
   - search:
       lang: en
   - mkdocstrings:
+      default_handler: python
+      handlers:
+      python:
+        paths: [src]
       watch:
         - dr-simulator
 extra:
