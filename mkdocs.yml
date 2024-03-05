@@ -53,7 +53,7 @@ plugins:
       default_handler: python
       handlers:
       python:
-        paths: [src]
+        paths: [dr-simulator]
       watch:
         - dr-simulator
 extra:
