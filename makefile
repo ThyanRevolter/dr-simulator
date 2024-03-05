@@ -1,6 +1,6 @@
 sources = dr_simulator
 
-.PHONY: test format lint unittest coverage pre-commit clean
+.PHONY: test format lint unittest coverage clean
 test: format lint unittest
 
 format:
@@ -16,9 +16,6 @@ unittest:
 
 coverage:
 	pytest --cov=$(sources) --cov-branch --cov-report=term-missing tests
-
-pre-commit:
-	pre-commit run --all-files
 
 clean:
 	rm -rf .mypy_cache .pytest_cache

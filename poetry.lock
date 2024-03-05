@@ -769,7 +769,7 @@ files = [
 ]
 
 [package.extras]
-dev = ["bump2version (==1.0.1)", "flake8 (==3.8.4)", "flake8-implicit-str-concat (==0.2.0)", "flake8-print (==4.0.0)", "isort (==5.6.4)", "pre-commit (==2.9.2)", "pytest (==6.1.2)", "pytest-cov (==2.10.1)", "twine (==3.2.0)", "yamllint (==1.25.0)"]
+dev = ["bump2version (==1.0.1)", "flake8 (==3.8.4)", "flake8-implicit-str-concat (==0.2.0)", "flake8-print (==4.0.0)", "isort (==5.6.4)", "pytest (==6.1.2)", "pytest-cov (==2.10.1)", "twine (==3.2.0)", "yamllint (==1.25.0)"]
 test = ["pytest (==6.1.2)", "pytest-cov (==2.10.1)"]
 
 [[package]]
@@ -964,19 +964,8 @@ files = [
 importlib-metadata = {version = ">=0.12", markers = "python_version < \"3.8\""}
 
 [package.extras]
-dev = ["pre-commit", "tox"]
+dev = ["tox"]
 testing = ["pytest", "pytest-benchmark"]
-
-[[package]]
-name = "pre-commit"
-version = "2.15.0"
-description = "A framework for managing and maintaining multi-language pre-commit hooks."
-optional = true
-python-versions = ">=3.6.1"
-files = [
-    {file = "pre_commit-2.15.0-py2.py3-none-any.whl", hash = "sha256:a4ed01000afcb484d9eb8d504272e642c4c4099bbad3a6b27e519bd6a3e928a6"},
-    {file = "pre_commit-2.15.0.tar.gz", hash = "sha256:3c25add78dbdfb6a28a651780d5c311ac40dd17f160eb3954a0c59da40a505a7"},
-]
 
 [package.dependencies]
 cfgv = ">=2.0.0"
@@ -1720,7 +1709,7 @@ docs = ["jaraco.packaging (>=8.2)", "rst.linker (>=1.9)", "sphinx"]
 testing = ["func-timeout", "jaraco.itertools", "pytest (>=4.6)", "pytest-black (>=0.3.7)", "pytest-checkdocs (>=2.4)", "pytest-cov", "pytest-enabler (>=1.0.1)", "pytest-flake8", "pytest-mypy"]
 
 [extras]
-dev = ["bump2version", "pip", "pre-commit", "toml", "tox", "twine", "virtualenv"]
+dev = ["bump2version", "pip", "toml", "tox", "twine", "virtualenv"]
 doc = ["mkdocs", "mkdocs-autorefs", "mkdocs-include-markdown-plugin", "mkdocs-material", "mkdocstrings"]
 test = ["black", "flake8", "flake8-docstrings", "isort", "mypy", "pytest", "pytest-cov"]
 
